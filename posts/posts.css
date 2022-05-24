@@ -1,0 +1,92 @@
+* html {
+  margin: 0;
+  padding: 1rem;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+#app {
+  margin-top: 10vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 98vw;
+  height: 100vh;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 7fr;
+  justify-content: space-evenly;
+  z-index: 0;
+}
+
+#app h1 {
+  color: #fff;
+  max-width: 36rem;
+  max-height: 3rem;
+  padding-left: 10px;
+  background: rgb(0, 123, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 123, 255, 1) 20%,
+    rgba(0, 76, 157, 1) 75%,
+    rgba(0, 47, 98, 1) 100%
+  );
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 4px 3px 9px -1px rgba(0, 0, 0, 0.43);
+  border-radius: 10px;
+  box-shadow: 4px 3px 9px -1px rgba(0, 0, 0, 0.43);
+}
+
+#posts {
+  display: grid;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  max-height: 200px;
+}
+
+#my-posts {
+  text-align: left;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#new-post-form {
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 10px;
+}
+
+#title {
+  align-self: flex-start;
+  color: #007bff;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+}
+
+.right-buttons {
+  display: flex;
+}
+
+.right-buttons .btn {
+  margin-left: 5px;
+}
+
+.card {
+  margin-bottom: 1em;
+  max-width: 560px !important;
+}

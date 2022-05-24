@@ -1,0 +1,84 @@
+* html {
+  margin: 0;
+  padding: 1rem;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+#app {
+  margin-top: 25vh;
+  /* width: 25vw; */
+  text-align: left;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  z-index: 0;
+}
+
+#posts {
+  text-align: left;
+  display: flex !important;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* #log-in {
+    flex: 0 0 auto;
+} */
+
+#new-post-form {
+  width: 25rem;
+  flex-basis: auto;
+  flex-shrink: 10;
+}
+
+#title {
+  align-self: flex-start;
+  color: #007bff;
+}
+
+.flexed {
+  display: flex;
+}
+
+#sign-up-div h2 {
+  color: #007bff;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+}
+
+.right-buttons {
+  display: flex;
+}
+
+.right-buttons .btn {
+  margin-left: 5px;
+}
+
+.card {
+  margin-bottom: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+  position: fixed;
+  margin: center center;
+}
